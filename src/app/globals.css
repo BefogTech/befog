@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px rgb(0, 0, 0); */
+  background-color: #252525;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff59007a; 
+  /* border-radius: 10px; */
+}
+
+.numbers {
+  background: linear-gradient(
+    254.81deg,
+    transparent 3%,
+    #B7AC44 15%,
+    #ff6600 48.7%,
+    #B7AC44 80%,
+    transparent 97%
+  );
+}
