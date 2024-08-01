@@ -98,6 +98,7 @@ const Footer = () => {
           <div className="md:col-span-1 sm:col-span-2 block lg:mb-0 md:mb-5 mb-3">
             <div className="logo-cont w-fit">
               <Link href='/' ><Image
+              alt=""
                 width={1000}
                 height={1000}
                 className="w-40"

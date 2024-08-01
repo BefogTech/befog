@@ -21,7 +21,7 @@ const page = () => {
               <p className="mb-6 md:text-base text-sm">
                 Befog (A&W Technology) is an innovative IT startup offering web
                 development, web design, logo design, and cloud services. We
-                deliver high-quality, customized solutions to meet our clients'
+                deliver high-quality, customized solutions to meet our clients
                 diverse tech needs.
               </p>
               <div className="btns lg:block hidden">
@@ -36,6 +36,7 @@ const page = () => {
             </div>
             <div className="col-span-1 h-full flex flex-col items-center justify-center">
               <Image
+              alt=""
                 width={1000}
                 height={1000}
                 src="/assets/service-brain.png"

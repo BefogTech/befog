@@ -87,6 +87,7 @@ const Services = () => {
           </div>
           <div className="col-span-1 lg:px-0 md:px-[15%] flex items-center justify-center flex-col">
             <Image
+            alt=""
               width={1000}
               height={1000}
               className="object-cover"

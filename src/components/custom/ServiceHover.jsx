@@ -135,6 +135,7 @@ const ServiceHover = () => {
                 }`}
               >
                 <Image
+                alt=""
                   width={1000}
                   height={1000}
                   src="/assets/service-page/coding.svg"
@@ -166,6 +167,7 @@ const ServiceHover = () => {
                       </div>
                       <div className="img-cont w-2/3 h-full ml-auto mr-5">
                         <Image
+                        alt=""
                           width={1000}
                           height={1000}
                           src={link.img}

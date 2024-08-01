@@ -43,6 +43,7 @@ const Founder = () => {
               />
             <div className="lg:w-full w-fit mx-auto h-[32rem] relative after:h-[110%] after:w-[30%] md:after:block after:hidden after:bg-[#ff5900] after:absolute after:-right-10 after:top-1/2 after:translate after:-translate-y-1/2 after:z-0">
               <Image
+              alt=""
                 width={1000}
                 height={1000}
                 className=" w-full h-full object-cover relative z-[1]"

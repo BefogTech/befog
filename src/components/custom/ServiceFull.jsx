@@ -136,6 +136,7 @@ const ServiceFull = () => {
               }
             >
               <Image
+              alt=""
                 width={1000}
                 height={1000}
                 src={item.img}

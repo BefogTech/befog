@@ -71,6 +71,7 @@ const AnimatedImage = () => {
             />
             <Image
               ref={imageRef}
+              alt=""
               src="/assets/career.jpg"
               layout="fill"
               objectFit="cover"
@@ -119,6 +120,7 @@ const AnimatedImage = () => {
               src="/assets/career.jpg"
               layout="responsive"
               width={1000}
+              alt=""
               height={500}
               objectFit="cover"
               className="w-full"

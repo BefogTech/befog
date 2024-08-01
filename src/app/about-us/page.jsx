@@ -46,6 +46,7 @@ const page = () => {
               </div>
               <div className="col-span-1">
                 <Image
+                alt=""
                   src="/assets/about-us/about-banner.svg"
                   width={1000}
                   height={1000}
@@ -105,7 +106,7 @@ const page = () => {
                 Bussiness
               </h1>
               <div className="img-cont w-80 absolute">
-              <Image width={1000} height={1000} src='/assets/about-us/header-bg.jpg' />
+              <Image alt="" width={1000} height={1000} src='/assets/about-us/header-bg.jpg' />
               </div>
             </div>
           </div>

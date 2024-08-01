@@ -54,6 +54,7 @@ const Contact = () => {
                   <Image
                     width={1000}
                     height={1000}
+                    alt=""
                     className="w-full h-full filter saturate-0 group-hover:scale-110 group-hover:saturate-100 ease-in-out duration-200 transition-all"
                     src="/assets/contact.jpg"
                   />

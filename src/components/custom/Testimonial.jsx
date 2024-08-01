@@ -82,6 +82,7 @@ const Testimonial = () => {
                       <CardHeader className="p-0 relative">
                         <div className="md:w-24 w-20 md:h-24 h-20 absolute lg:-left-24 lg:translate-x-0 left-1/2 transform -translate-x-1/2 lg:-top-14 -top-10 rounded-full overflow-hidden border border-[#ff5900]">
                           <Image
+                          alt=""
                             width={1000}
                             height={1000}
                             className="w-full h-full"

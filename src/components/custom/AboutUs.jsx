@@ -19,6 +19,7 @@ const AboutUs = () => {
                 <Image
                   width={1000}
                   height={1000}
+                  alt=""
                   className="!w-full h-full group-hover:scale-125 group-hover:-translate-x-15 ease-in-out duration-500 transition-all"
                   src="/assets/company.jpg"
                 />
