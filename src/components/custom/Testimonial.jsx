@@ -32,30 +32,30 @@ const Testimonial = () => {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore numquam cumque perspiciatis, veniam consectetur pariatur reprehenderit velit quis voluptatibus veritatis, nobis molestias, obcaecati magnam repellendus eius perferendis voluptatem culpa sint?",
       name: "Client Name",
     },
-    {
-      project: "Project Name",
-      review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore numquam cumque perspiciatis, veniam consectetur pariatur reprehenderit velit quis voluptatibus veritatis, nobis molestias, obcaecati magnam repellendus eius perferendis voluptatem culpa sint?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur reprehenderit quaerat iste expedita culpa non dolor, maiores necessitatibus voluptatibus hic vel est totam repudiandae quisquam aliquid itaque! Mollitia, cupiditate ea!",
-      name: "Client Name",
-    },
-    {
-      project: "Project Name",
-      review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore numquam cumque perspiciatis, veniam consectetur pariatur reprehenderit velit quis voluptatibus veritatis, nobis molestias, obcaecati magnam repellendus eius perferendis voluptatem culpa sint?",
-      name: "Client Name",
-    },
-    {
-      project: "Project Name",
-      review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore numquam cumque perspiciatis, veniam consectetur pariatur reprehenderit velit quis voluptatibus veritatis, nobis molestias, obcaecati magnam repellendus eius perferendis voluptatem culpa sint?",
-      name: "Client Name",
-    },
-    {
-      project: "Project Name",
-      review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore numquam cumque perspiciatis, veniam consectetur pariatur reprehenderit velit quis voluptatibus veritatis, nobis molestias, obcaecati magnam repellendus eius perferendis voluptatem culpa sint?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur repudiandae tenetur dolores porro ullam ipsa quasi cum distinctio deleniti ratione maxime et harum fugit fugiat soluta fuga quae, nulla quas.",
-      name: "Client Name",
-    },
+    // {
+    //   project: "Project Name",
+    //   review:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore numquam cumque perspiciatis, veniam consectetur pariatur reprehenderit velit quis voluptatibus veritatis, nobis molestias, obcaecati magnam repellendus eius perferendis voluptatem culpa sint?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur reprehenderit quaerat iste expedita culpa non dolor, maiores necessitatibus voluptatibus hic vel est totam repudiandae quisquam aliquid itaque! Mollitia, cupiditate ea!",
+    //   name: "Client Name",
+    // },
+    // {
+    //   project: "Project Name",
+    //   review:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore numquam cumque perspiciatis, veniam consectetur pariatur reprehenderit velit quis voluptatibus veritatis, nobis molestias, obcaecati magnam repellendus eius perferendis voluptatem culpa sint?",
+    //   name: "Client Name",
+    // },
+    // {
+    //   project: "Project Name",
+    //   review:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore numquam cumque perspiciatis, veniam consectetur pariatur reprehenderit velit quis voluptatibus veritatis, nobis molestias, obcaecati magnam repellendus eius perferendis voluptatem culpa sint?",
+    //   name: "Client Name",
+    // },
+    // {
+    //   project: "Project Name",
+    //   review:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore numquam cumque perspiciatis, veniam consectetur pariatur reprehenderit velit quis voluptatibus veritatis, nobis molestias, obcaecati magnam repellendus eius perferendis voluptatem culpa sint?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur repudiandae tenetur dolores porro ullam ipsa quasi cum distinctio deleniti ratione maxime et harum fugit fugiat soluta fuga quae, nulla quas.",
+    //   name: "Client Name",
+    // },
   ];
   return (
     <>
@@ -86,7 +86,8 @@ const Testimonial = () => {
                             width={1000}
                             height={1000}
                             className="w-full h-full"
-                            src="/assets/sanjay-sir.jpg"
+                            src=""
+                            // /assets/sanjay-sir.jpg
                           />
                         </div>
                       </CardHeader>

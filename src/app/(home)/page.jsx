@@ -17,7 +17,7 @@ export default function Home() {
         <Services />
         <AboutUs />
         <Founder />
-        <Career />
+        {/* <Career /> */}
         <Testimonial />
         <Contact />
       </Suspense>

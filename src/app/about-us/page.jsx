@@ -46,7 +46,7 @@ const page = () => {
               </div>
               <div className="col-span-1">
                 <Image
-                alt=""
+                  alt=""
                   src="/assets/about-us/about-banner.svg"
                   width={1000}
                   height={1000}
@@ -100,15 +100,41 @@ const page = () => {
                 </AccordionItem>
               </Accordion>
             </div>
-            <div className="header relative mb-20">
-              <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold w-[55%] text-center mx-auto">
+            <div className="header relative mb-40 w-[55%] mx-auto">
+              <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold text-center">
                 We help many of Professionals be more effective at their
                 Bussiness
               </h1>
-              <div className="img-cont w-80 absolute">
-              <Image alt="" width={1000} height={1000} src='/assets/about-us/header-bg.jpg' />
+              <div className="img-cont w-80 absolute -right-20">
+                <Image
+                  alt=""
+                  width={1000}
+                  height={1000}
+                  src="/assets/about-us/header-bg.jpg"
+                />
               </div>
             </div>
+          </div>
+
+          <div className="values py-12">
+            <div className="header mb-16">
+              <h1 className=" lg:text-8xl md:text-7xl sm:text-6xl text-5xl font-black text-center text-[#FF590026]">
+                Core Values
+              </h1>
+              <CustomHeader
+                header1="Your Trust"
+                header2=""
+                className="before:hidden -mt-8"
+              />
+              <p className="text-center">
+                {" "}
+                We are committed to delivering top-notch services that exceed
+                our clients' expectations
+              </p>
+            </div>
+              <div className="cards">
+                
+              </div>
           </div>
         </div>
       </section>
