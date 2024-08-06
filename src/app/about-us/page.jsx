@@ -243,7 +243,7 @@ const page = () => {
                 className="before:hidden"
               />
             </div>
-            <div className="founder grid grid-cols-7 gap-16 mx-auto pb-10">
+            <div className="founder grid grid-cols-7 gap-16 mx-auto mb-20">
               <div className="sanjay-photo col-span-2 rounded-tr-3xl overflow-hidden">
                 <Image
                   width={1000}
@@ -258,7 +258,7 @@ const page = () => {
                   <h1 className="text-[#ff5900] font-semibold mb-5">
                     Founder & Director
                   </h1>
-                  <h1 className="text-4xl mb-3">Mr. Sanjay Mehrotra</h1>
+                  <h1 className="text-4xl font-medium mb-3">Mr. Sanjay Mehrotra</h1>
                   <div className="mb-10">
                     <p className="mb-3">
                       It is with great enthusiasm and pride that I welcome you
