@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, buttonVariants } from "../ui/button";
-
+import Image from "next/image";
+import Globe from "./Globe";
 const Banner = () => {
   return (
     <>
@@ -34,8 +35,13 @@ const Banner = () => {
               loop
               autoPlay
             >
-              <source src="/assets/globe.mp4" type="video/mp4" />
+              <source
+                src="/assets/globe.mp4"
+                type="video/mp4"
+              />
             </video>
+            {/* <Image width={1000} height={1000} src="/assets/globe.gif" /> */}
+            {/* <Globe /> */}
             <div className="btns lg:hidden block mt-8">
               <Button className=" mx-2.5">Explore Now</Button>
               <Button

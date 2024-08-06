@@ -1,7 +1,8 @@
-import ServiceFull from "@/components/custom/ServiceFull";
-import ServiceHover from "@/components/custom/ServiceHover";
 import { Button, buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
+import { lazy } from "react";
+const ServiceFull = lazy(() => import("@/components/custom/ServiceFull"));
+const ServiceHover = lazy(() => import("@/components/custom/ServiceHover"));
 
 const page = () => {
   return (
@@ -36,7 +37,7 @@ const page = () => {
             </div>
             <div className="col-span-1 h-full flex flex-col items-center justify-center">
               <Image
-              alt=""
+                alt=""
                 width={1000}
                 height={1000}
                 src="/assets/service-brain.png"

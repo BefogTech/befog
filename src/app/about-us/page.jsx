@@ -8,6 +8,10 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import ServiceCard from "@/components/custom/ServiceCard";
+import { Card } from "@/components/ui/card";
+import Link from "next/link";
+import { MoveRight } from "lucide-react";
 
 const page = () => {
   return (
@@ -132,9 +136,119 @@ const page = () => {
                 our clients' expectations
               </p>
             </div>
-              <div className="cards">
-                
+            <div className="cards flex justify-between">
+              <div className="col-1 w-full mx-1.5">
+                <div className="h-20 bg-gradient-to-t from-[#ff5900] from-10% to-transparent to-90% rounded-2xl mb-3 p-0.5">
+                  <div className="h-full w-full bg-black rounded-2xl"></div>
+                </div>
+                <div className="card w-full border-2 border-[#ff5900] rounded-2xl py-24 px-10 mb-3 relative group overflow-hidden">
+                  <h1 className="text-center text-xl mb-5">Sustainability</h1>
+                  <p className="text-center mb-3">
+                    We are committed to sustainable practices that benefit our
+                    clients
+                  </p>
+                  <p className="h-36 text-center relative group-hover:left-0 left-[120%] group-hover:bottom-0 -bottom-20 ease-in-out duration-200 transition-all">
+                    Our solutions are tailored to meet the unique requirements
+                    of each client, ensuring maximum value and impact
+                  </p>
+                  <Link
+                    href="/about-us"
+                    className="flex items-center absolute group-hover:bottom-8 -bottom-20 right-10 ease-in-out duration-200 transition-all"
+                  >
+                    Expand <MoveRight className="ml-1.5 w-5 h-5" />
+                  </Link>
+                </div>
+                <div className="h-32 bg-gradient-to-b from-[#ff5900] from-10% to-transparent to-80% rounded-2xl mb-3 p-0.5">
+                  <div className="h-full w-full bg-black rounded-2xl"></div>
+                </div>
               </div>
+              <div className="col-2 w-full mx-1.5">
+                <div className="h-16 bg-gradient-to-t from-[#ff5900] from-10% to-transparent to-85% rounded-2xl mb-3 p-0.5">
+                  <div className="h-full w-full bg-black rounded-2xl"></div>
+                </div>
+                <div className="border-2 border-[#ff5900] rounded-2xl mb-3 py-10 px-10">
+                  <h1 className="text-center text-xl mb-5">Innovation</h1>
+                  <p className="text-center">
+                    Innovation is at the heart of everything we do
+                  </p>
+                </div>
+                <div className="border-2 border-[#ff5900] rounded-2xl mb-3 py-16 px-10">
+                  <h1 className="text-center text-2xl">Core Values</h1>
+                </div>
+                <div className="border-2 border-[#ff5900] rounded-2xl mb-3 py-10 px-10">
+                  <h1 className="text-center text-xl mb-5">Innovation</h1>
+                  <p className="text-center">
+                    Innovation is at the heart of everything we do
+                  </p>
+                </div>
+                <div className="h-16 bg-gradient-to-b from-[#ff5900] from-10% to-transparent to-80% rounded-2xl mb-3 p-0.5">
+                  <div className="h-full w-full bg-black rounded-2xl"></div>
+                </div>
+              </div>
+              <div className="col-3 w-full mx-1.5">
+                <div className="h-32 bg-gradient-to-t from-[#ff5900] from-10% to-transparent to-90% rounded-2xl mb-3 p-0.5">
+                  {" "}
+                  <div className="h-full w-full bg-black rounded-2xl"></div>
+                </div>
+                <div className="card w-full border-2 border-[#ff5900] rounded-2xl py-24 px-10 mb-3 relative group overflow-hidden">
+                  <h1 className="text-center text-xl mb-5">
+                    Customer-Centricity
+                  </h1>
+                  <p className="text-center mb-3">
+                    We prioritize our customers' needs and satisfaction above
+                    all clients
+                  </p>
+                  <p className="h-36 text-center relative group-hover:left-0 left-[120%] group-hover:bottom-0 -bottom-20 ease-in-out duration-200 transition-all">
+                    Our solutions are tailored to meet the unique requirements
+                    of each client, ensuring maximum value and impact
+                  </p>
+                  <Link
+                    href="/about-us"
+                    className="flex items-center absolute group-hover:bottom-8 -bottom-20 right-10 ease-in-out duration-200 transition-all"
+                  >
+                    Expand <MoveRight className="ml-1.5 w-5 h-5" />
+                  </Link>
+                </div>
+                <div className="h-20 bg-gradient-to-b from-[#ff5900] from-10% to-transparent to-70% rounded-2xl mb-3 p-0.5">
+                  <div className="h-full w-full bg-black rounded-2xl"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="team py-12">
+            <div className="header mb-8">
+              <CustomHeader
+                header1="Leadership Team"
+                header2="Team"
+                className="before:hidden"
+              />
+            </div>
+            <div className="founder grid grid-cols-4 gap-10 w-[90%] mx-auto">
+              <div className="sanjay-photo col-span-1 rounded-tr-3xl overflow-hidden">
+                <Image
+                  width={1000}
+                  height={1000}
+                  src="/assets/sanjay-sir.jpg"
+                  className="w-full h-full"
+                />
+              </div>
+              <div className="sanjay-intro col-span-3 flex items-center justify-center">
+                <div className="inner">
+                  <h1 className="text-[#ff5900] font-semibold mb-8">Founder & CEO</h1>
+                  <h1 className="text-4xl mb-3">Mr. Sanjay Mehrotra</h1>
+                  <p className="mb-10">
+                    Led by our CEO, John Doe, our team comprises talented
+                    professionals with diverse expertise in software
+                    development, project management, and digital strategy. We
+                    foster a culture of collaboration and continuous learning
+                  </p>
+                  <Button className={buttonVariants({ variant: "outline" })}>
+                    Explore Now
+                  </Button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

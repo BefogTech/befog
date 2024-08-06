@@ -26,7 +26,7 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="col-span-1 lg:order-2 order-1 flex justify-center items-center w-full mx-auto lg:mb-0 mb-10">
-              <div className="flex flex-col justify-center items-center">
+              <div className="flex flex-col justify-center">
               <p className="lg:mb-8 mb-4 lg:text-base text-sm lg:text-left text-center">
                 At Befog(A&W Technology), we specialize in delivering innovative
                 IT solutions tailored to meet your business needs. From web and
@@ -36,7 +36,7 @@ const AboutUs = () => {
                 ideas into reality and navigating the digital landscape with
                 confidence.{" "}
               </p>
-              <Button>See Details</Button>
+              <Button className='w-fit'>See Details</Button>
               </div>
             </div>
           </div>

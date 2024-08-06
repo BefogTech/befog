@@ -21,13 +21,13 @@ import Image from "next/image";
 const Testimonial = () => {
   const testimonials = [
     {
-      project: "Project Name",
+      project: "Lego House Architecture",
       review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore numquam cumque perspiciatis, veniam consectetur pariatur reprehenderit velit quis voluptatibus veritatis, nobis molestias, obcaecati magnam repellendus eius perferendis voluptatem culpa sint?",
-      name: "Client Name",
+        "I had an outstanding experience with A&W Technologies. They created a fantastic website for Lego House Architecture, delivering the project on time and exceeding my expectations. Their professionalism, attention to detail, and innovative design approach truly set them apart. Highly recommended for web development needs!",
+      name: "Kushagra",
     },
     {
-      project: "Project Name",
+      project: "IndieStreet",
       review:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore numquam cumque perspiciatis, veniam consectetur pariatur reprehenderit velit quis voluptatibus veritatis, nobis molestias, obcaecati magnam repellendus eius perferendis voluptatem culpa sint?",
       name: "Client Name",
