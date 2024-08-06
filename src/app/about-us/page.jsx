@@ -1,9 +1,7 @@
 import CustomHeader from "@/components/custom/CustomHeader";
 import { Button, buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
-import anushree from '../../../public/assets/team/anushree.jpg';
-import aditya from '../../../public/assets/team/aditya.jpg'
-import nikhil from '../../../public/assets/team/nikhil.jpg'
+
 import React from "react";
 import {
   Accordion,
@@ -17,25 +15,24 @@ import { MoveRight } from "lucide-react";
 const page = () => {
   const members = [
     {
-      image: anushree,
+      image: "/assets/team/anushree.jpg",
       name: "Anushree Saxena",
       position: "HR Manager",
       alt: "Anushree Saxena",
     },
     {
-      image: nikhil,
+      image: "/assets/team/nikhil.jpg",
       name: "Nikhil Kumar Gupta",
       position: "Frontend Developer",
       alt: "Nikhil Kumar Gupta",
     },
     {
-      image: aditya,
+      image: "/assets/team/aditya.jpg",
       name: "Aditya Kannaujiya",
       position: "UI/UX Designer",
       alt: "Aditya Kannaujiya",
     },
   ];
-
   return (
     <>
       <section className="about-us w-full bg-black">
@@ -299,27 +296,26 @@ const page = () => {
                   service.
                 </p>
               </div>
-              <div className="members grid grid-cols-3 gap-10">
-                {members.map((member, index) => (
-                  <div className="col-span-1" key={index}>
-                    <div className="w-fit mx-auto">
-                      <div className="img-cont w-64 h-[19rem] rounded-tr-3xl overflow-hidden mb-5">
-                        <Image
-                          width={1000}
-                          height={1000}
-                          src={member.image}
-                          className="w-full h-full"
-                          alt={member.alt}
-                        />
-                      </div>
-                      <div className="member-info">
-                        <h1 className="font-semibold text-xl text-center mb-1.5">{member.name}</h1>
-                        <p className="text-center text-[#ff5900] font-semibold">{member.position}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <div className="members grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      {members.map((member, index) => (
+        <div className="col-span-1" key={index}>
+          <div className="w-fit mx-auto">
+            <div className="img-cont w-64 h-[19rem] rounded-tr-3xl overflow-hidden mb-5 relative">
+              <Image
+                src={member.image}
+                layout="fill"
+                objectFit="cover"
+                alt={member.alt}
+              />
+            </div>
+            <div className="member-info">
+              <h1 className="font-semibold text-xl text-center mb-1.5">{member.name}</h1>
+              <p className="text-center text-[#ff5900] font-semibold">{member.position}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
             </div>
           </div>
         </div>
