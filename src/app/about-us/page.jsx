@@ -1,6 +1,9 @@
 import CustomHeader from "@/components/custom/CustomHeader";
 import { Button, buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
+import anushree from '../../../public/assets/team/anushree.jpg';
+import aditya from '../../../public/assets/team/aditya.jpg'
+import nikhil from '../../../public/assets/team/nikhil.jpg'
 import React from "react";
 import {
   Accordion,
@@ -14,19 +17,19 @@ import { MoveRight } from "lucide-react";
 const page = () => {
   const members = [
     {
-      image: "/assets/team/anushree.jpg",
+      image: anushree,
       name: "Anushree Saxena",
       position: "HR Manager",
       alt: "Anushree Saxena",
     },
     {
-      image: "/assets/team/nikhil.jpg",
+      image: nikhil,
       name: "Nikhil Kumar Gupta",
       position: "Frontend Developer",
       alt: "Nikhil Kumar Gupta",
     },
     {
-      image: "/assets/team/aditya.jpg",
+      image: aditya,
       name: "Aditya Kannaujiya",
       position: "UI/UX Designer",
       alt: "Aditya Kannaujiya",
