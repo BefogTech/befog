@@ -15,13 +15,13 @@ import { MoveRight } from "lucide-react";
 const page = () => {
   const members = [
     {
-      image: "/assets/team/IMG_0192.JPG",
+      image: "/assets/team/as.jpg",
       name: "Anushree Saxena",
       position: "HR Manager",
       alt: "Anushree Saxena",
     },
     {
-      image: "/assets/team/IMG_0192.JPG",
+      image: "/assets/team/nikhil.jpg",
       name: "Nikhil Kumar Gupta",
       position: "Frontend Developer",
       alt: "Nikhil Kumar Gupta",
