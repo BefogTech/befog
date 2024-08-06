@@ -231,6 +231,7 @@ const page = () => {
                   height={1000}
                   src="/assets/sanjay-sir.jpg"
                   className="w-full h-full"
+                  alt="Sanjay Mehrotra"
                 />
               </div>
               <div className="sanjay-intro col-span-5 flex items-center justify-center">
@@ -239,7 +240,7 @@ const page = () => {
                     Founder & Director
                   </h1>
                   <h1 className="text-4xl mb-3">Mr. Sanjay Mehrotra</h1>
-                  <p className="mb-10">
+                  <div className="mb-10">
                     <p className="mb-3">
                       It is with great enthusiasm and pride that I welcome you
                       to Befog. As the founder of this innovative IT startup, I
@@ -258,7 +259,7 @@ const page = () => {
                       are committed to creating a future where technology
                       empowers organizations to achieve their fullest potential.
                     </p>
-                  </p>
+                  </div>
                   <Button className={buttonVariants({ variant: "outline" })}>
                     Explore Now
                   </Button>
@@ -285,6 +286,7 @@ const page = () => {
                         height={1000}
                         src="/assets/team/anushree.jpg"
                         className="w-64"
+                        alt="Anushree Saxena"
                       />
                     </div>
                   </div>
