@@ -21,7 +21,7 @@ const page = () => {
       alt: "Anushree Saxena",
     },
     {
-      image: "/assets/team/nikhil.jpg",
+      image: "/assets/team/IMG_0192.JPG",
       name: "Nikhil Kumar Gupta",
       position: "Frontend Developer",
       alt: "Nikhil Kumar Gupta",
