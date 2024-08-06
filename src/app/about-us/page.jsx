@@ -8,12 +8,31 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import ServiceCard from "@/components/custom/ServiceCard";
-import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import { MoveRight } from "lucide-react";
 
 const page = () => {
+  const members = [
+    {
+      image: "/assets/team/anushree.jpg",
+      name: "Anushree Saxena",
+      position: "HR Manager",
+      alt: "Anushree Saxena",
+    },
+    {
+      image: "/assets/team/nikhil.jpg",
+      name: "Nikhil Kumar Gupta",
+      position: "Frontend Developer",
+      alt: "Nikhil Kumar Gupta",
+    },
+    {
+      image: "/assets/team/aditya.jpg",
+      name: "Aditya Kannaujiya",
+      position: "UI/UX Designer",
+      alt: "Aditya Kannaujiya",
+    },
+  ];
+
   return (
     <>
       <section className="about-us w-full bg-black">
@@ -278,19 +297,25 @@ const page = () => {
                 </p>
               </div>
               <div className="members grid grid-cols-3 gap-10">
-                <div className="col-span-1">
-                  <div className="anushree w-fit mx-auto">
-                    <div className="img-cont w-full h-full rounded-tr-3xl overflow-hidden">
-                      <Image
-                        width={1000}
-                        height={1000}
-                        src="/assets/team/anushree.jpg"
-                        className="w-64"
-                        alt="Anushree Saxena"
-                      />
+                {members.map((member, index) => (
+                  <div className="col-span-1" key={index}>
+                    <div className="w-fit mx-auto">
+                      <div className="img-cont w-64 h-[19rem] rounded-tr-3xl overflow-hidden mb-5">
+                        <Image
+                          width={1000}
+                          height={1000}
+                          src={member.image}
+                          className="w-full h-full"
+                          alt={member.alt}
+                        />
+                      </div>
+                      <div className="member-info">
+                        <h1 className="font-semibold text-xl text-center mb-1.5">{member.name}</h1>
+                        <p className="text-center text-[#ff5900] font-semibold">{member.position}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
