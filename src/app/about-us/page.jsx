@@ -224,8 +224,8 @@ const page = () => {
                 className="before:hidden"
               />
             </div>
-            <div className="founder grid grid-cols-4 gap-10 w-[90%] mx-auto">
-              <div className="sanjay-photo col-span-1 rounded-tr-3xl overflow-hidden">
+            <div className="founder grid grid-cols-7 gap-16 mx-auto pb-10">
+              <div className="sanjay-photo col-span-2 rounded-tr-3xl overflow-hidden">
                 <Image
                   width={1000}
                   height={1000}
@@ -233,19 +233,61 @@ const page = () => {
                   className="w-full h-full"
                 />
               </div>
-              <div className="sanjay-intro col-span-3 flex items-center justify-center">
+              <div className="sanjay-intro col-span-5 flex items-center justify-center">
                 <div className="inner">
-                  <h1 className="text-[#ff5900] font-semibold mb-8">Founder & CEO</h1>
+                  <h1 className="text-[#ff5900] font-semibold mb-5">
+                    Founder & Director
+                  </h1>
                   <h1 className="text-4xl mb-3">Mr. Sanjay Mehrotra</h1>
                   <p className="mb-10">
-                    Led by our CEO, John Doe, our team comprises talented
-                    professionals with diverse expertise in software
-                    development, project management, and digital strategy. We
-                    foster a culture of collaboration and continuous learning
+                    <p className="mb-3">
+                      It is with great enthusiasm and pride that I welcome you
+                      to Befog. As the founder of this innovative IT startup, I
+                      am excited to share our vision and the journey that has
+                      brought us here. At Befog, we are dedicated to pushing the
+                      boundaries of technology to deliver solutions that not
+                      only meet the needs of today but anticipate the challenges
+                      of tomorrow.
+                    </p>
+                    <p>
+                      Our story began with a simple yet profound belief:
+                      technology holds the key to transforming businesses and
+                      enriching lives. With this conviction at our core, we have
+                      assembled a team of exceptional individuals who share a
+                      common passion for innovation and excellence. Together, we
+                      are committed to creating a future where technology
+                      empowers organizations to achieve their fullest potential.
+                    </p>
                   </p>
                   <Button className={buttonVariants({ variant: "outline" })}>
                     Explore Now
                   </Button>
+                </div>
+              </div>
+            </div>
+            <div className="team-members">
+              <div className="team-intro mb-8">
+                <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold mb-3">
+                  Meet <span className="text-[#ff5900]">Our Team</span>
+                </h1>
+                <p>
+                  Meet our dynamic team of passionate innovators, dedicated
+                  towards bringing you cutting-edge solutions and exceptional
+                  service.
+                </p>
+              </div>
+              <div className="members grid grid-cols-3 gap-10">
+                <div className="col-span-1">
+                  <div className="anushree w-fit mx-auto">
+                    <div className="img-cont w-full h-full rounded-tr-3xl overflow-hidden">
+                      <Image
+                        width={1000}
+                        height={1000}
+                        src="/assets/team/anushree.jpg"
+                        className="w-64"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
