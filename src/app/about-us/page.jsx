@@ -15,7 +15,7 @@ import { MoveRight } from "lucide-react";
 const page = () => {
   const members = [
     {
-      image: "/assets/team/nikhil.jpg",
+      image: "/assets/team/IMG_0192.JPG",
       name: "Anushree Saxena",
       position: "HR Manager",
       alt: "Anushree Saxena",
@@ -258,7 +258,9 @@ const page = () => {
                   <h1 className="text-[#ff5900] font-semibold mb-5">
                     Founder & Director
                   </h1>
-                  <h1 className="text-4xl font-medium mb-3">Mr. Sanjay Mehrotra</h1>
+                  <h1 className="text-4xl font-medium mb-3">
+                    Mr. Sanjay Mehrotra
+                  </h1>
                   <div className="mb-10">
                     <p className="mb-3">
                       It is with great enthusiasm and pride that I welcome you
@@ -296,7 +298,25 @@ const page = () => {
                   service.
                 </p>
               </div>
-             
+              <div className="members grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                {members.map((member, index) => (
+                  <div className="col-span-1" key={index}>
+                    <div className="w-fit mx-auto">
+                      <div className="img-cont w-64 h-[19rem] rounded-tr-3xl overflow-hidden mb-5 relative">
+                        <Image width={1000} height={1000} src={member.image} alt={member.alt} />
+                      </div>
+                      <div className="member-info">
+                        <h1 className="font-semibold text-xl text-center mb-1.5">
+                          {member.name}
+                        </h1>
+                        <p className="text-center text-[#ff5900] font-semibold">
+                          {member.position}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
