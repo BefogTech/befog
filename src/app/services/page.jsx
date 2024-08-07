@@ -18,12 +18,14 @@ const page = () => {
               </p>
               <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold mb-5">
                 Transforming Ideas into{" "}
-                <span className="text-[#FF5900]">Digital Reality</span>
+                <span className="text-[#FF5900] text-transparent bg-gradient-to-r from-[#ff5900] to-[#ff9b66] bg-clip-text">
+                  Digital Reality
+                </span>
               </h1>
               <p className="mb-6 md:text-base text-sm">
                 Befog (A&W Technology) is an innovative IT startup offering web
                 development, web design, logo design, and cloud services. We
-                deliver high-quality, customized solutions to meet our clients
+                deliver high-quality, customized solutions to meet our clients'
                 diverse tech needs.
               </p>
               <div className="btns lg:block hidden">
@@ -66,9 +68,17 @@ const page = () => {
 
         <div className="lg:py-10 pb-20">
           <div className="flex flex-col justify-center items-center">
-          <CustomHeader header1="Innovate, Collaborate, Succeed Together." header2="Career" className="before:hidden" />
-          <p className="text-center mt-20 mb-10">Grow your careers at the heart of change</p>
-          <Button className={buttonVariants({ variant: "outline" })}>Contact</Button>
+            <CustomHeader
+              header1="Innovate, Collaborate, Succeed Together."
+              header2="Career"
+              className="before:hidden"
+            />
+            <p className="text-center mt-20 mb-10">
+              Grow your careers at the heart of change
+            </p>
+            <Button className={buttonVariants({ variant: "outline" })}>
+              Contact
+            </Button>
           </div>
         </div>
       </section>

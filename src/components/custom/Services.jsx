@@ -67,8 +67,8 @@ const Services = () => {
         <div className="inner-services max-w-[100rem] mx-auto px-[5%] grid lg:grid-cols-2 lg:mb-60 mb-28">
           <div className="service-content col-span-1 flex justify-center items-center lg:mb-0 mb-16">
             <div className="content lg:pr-[10%] flex flex-col lg:items-start items-center">
-              <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-3xl lg:mb-12 mb-5 heading2-bold">
-                <span className="text-[#FF5900] font-semibold">Services</span>{" "}
+              <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-3xl lg:mb-12 mb-5 heading2-semibold">
+                <span className="text-[#FF5900] font-medium">Services</span>{" "}
                 We{" "}
                 <span className="after:h-1 after:w-[80%] w-full after:absolute relative after:block after:bottom-0 after:-right-3 after:bg-[#FF5900] after:rounded-full">
                   Provide
@@ -78,22 +78,21 @@ const Services = () => {
                 At Befog(A&W Technology), we blend innovation with precision to
                 deliver tailored IT solutions. From crafting seamless web
                 experiences to harnessing cutting-edge technologies, our expert
-                team is dedicated to transforming ideas into impactful
-                realities. Discover how we can empower your digital journey
-                today.
+                team is dedicated towards transforming ideas into impactful
+                reality. Discover how we enhance your digital journey...
               </p>
               <Button className=" w-fit lg:block hidden">Explore Now</Button>
             </div>
           </div>
           <div className="col-span-1 lg:px-0 md:px-[15%] flex items-center justify-center flex-col">
             <Image
-            alt=""
+              alt=""
               width={1000}
               height={1000}
               className="object-cover"
               src="/assets/services.svg"
             />
-              <Button className=" w-fit lg:hidden block mt-8">Explore Now</Button>
+            <Button className=" w-fit lg:hidden block mt-8">Explore Now</Button>
           </div>
         </div>
         <div className="service-category max-w-[100rem] mx-auto px-[5%]">
@@ -109,7 +108,10 @@ const Services = () => {
           </div>
           <div className="cards w-fit mx-auto grid lg:grid-cols-3 sm:grid-cols-2 xl:gap-8 md:gap-5 gap-2">
             {services.map((service, index) => (
-              <div className="service-cont col-span-1 md:scale-100 sm:scale-85" key={index}>
+              <div
+                className="service-cont col-span-1 md:scale-100 sm:scale-85"
+                key={index}
+              >
                 <ServiceCard service={service} className={service.bg} />
               </div>
             ))}

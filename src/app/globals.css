@@ -32,6 +32,9 @@
   font-style: normal;
 }
 
+.value-card {
+  box-shadow: inset 0 0 15px #ff590042;
+}
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -47,6 +50,12 @@
 ::-webkit-scrollbar-thumb {
   background: #ff59007a;
   /* border-radius: 10px; */
+}
+
+.core-value span {
+  /* Ellipse 93 */
+  background: #000000;
+  box-shadow: inset 0px 0px 28.2px -13px #ff5900;
 }
 
 .numbers {

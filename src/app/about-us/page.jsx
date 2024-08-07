@@ -11,6 +11,9 @@ import {
 } from "@/components/ui/accordion";
 import Link from "next/link";
 import { MoveRight } from "lucide-react";
+import CaseStudyFrame from "@/components/custom/CaseStudyFrame";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 
 const page = () => {
   const members = [
@@ -158,9 +161,11 @@ const page = () => {
             <div className="cards flex justify-between">
               <div className="col-1 w-full mx-1.5">
                 <div className="h-20 bg-gradient-to-t from-[#ff5900] from-10% to-transparent to-90% rounded-2xl mb-3 p-0.5">
-                  <div className="h-full w-full bg-black rounded-2xl"></div>
+                  <div className="w-full h-full bg-black rounded-2xl">
+                    <div className="h-full w-full bg-gradient-to-t from-[#ff59000b] from-10% to-transparent to-90% rounded-2xl"></div>
+                  </div>
                 </div>
-                <div className="card w-full border-2 border-[#ff5900] rounded-2xl py-24 px-10 mb-3 relative group overflow-hidden">
+                <div className="value-card w-full border-2 border-[#ff5900] bg-[#ff590007] rounded-2xl py-24 px-10 mb-3 relative group overflow-hidden">
                   <h1 className="text-center text-xl mb-5">Sustainability</h1>
                   <p className="text-center mb-3">
                     We are committed to sustainable practices that benefit our
@@ -177,39 +182,48 @@ const page = () => {
                     Expand <MoveRight className="ml-1.5 w-5 h-5" />
                   </Link>
                 </div>
-                <div className="h-32 bg-gradient-to-b from-[#ff5900] from-10% to-transparent to-80% rounded-2xl mb-3 p-0.5">
-                  <div className="h-full w-full bg-black rounded-2xl"></div>
+                <div className="h-32 bg-gradient-to-b from-[#ff5900] from-10% to-transparent to-90% rounded-2xl mb-3 p-0.5">
+                  <div className="w-full h-full bg-black rounded-2xl">
+                    <div className="h-full w-full bg-gradient-to-b from-[#ff59000b] from-10% to-transparent to-90% rounded-2xl"></div>
+                  </div>
                 </div>
               </div>
               <div className="col-2 w-full mx-1.5">
-                <div className="h-16 bg-gradient-to-t from-[#ff5900] from-10% to-transparent to-85% rounded-2xl mb-3 p-0.5">
-                  <div className="h-full w-full bg-black rounded-2xl"></div>
+                <div className="h-16 bg-gradient-to-t from-[#ff5900] from-10% to-transparent to-90% rounded-2xl mb-3 p-0.5">
+                  <div className="w-full h-full bg-black rounded-2xl">
+                    <div className="h-full w-full bg-gradient-to-t from-[#ff59000b] from-10% to-transparent to-90% rounded-2xl"></div>
+                  </div>
                 </div>
-                <div className="border-2 border-[#ff5900] rounded-2xl mb-3 py-10 px-10">
+                <div className="border-2 border-[#ff5900] bg-[#ff59000b] rounded-2xl mb-3 py-10 px-10">
                   <h1 className="text-center text-xl mb-5">Innovation</h1>
                   <p className="text-center">
                     Innovation is at the heart of everything we do
                   </p>
                 </div>
-                <div className="border-2 border-[#ff5900] rounded-2xl mb-3 py-16 px-10">
+                <div className="border-2 border-[#ff5900] bg-[#ff59000b] rounded-2xl mb-3 py-16 px-10 core-value relative overflow-hidden">
+                  {/* <span className="w-10 h-10 absolute bg-[#ff59001f] shadow-2xl shadow-[#ff59001f] rounded-full"/> */}
+                  <span className="w-40 h-40 absolute block -right-8 rounded-full" />
                   <h1 className="text-center text-2xl">Core Values</h1>
                 </div>
-                <div className="border-2 border-[#ff5900] rounded-2xl mb-3 py-10 px-10">
+                <div className="border-2 border-[#ff5900] bg-[#ff59000b] rounded-2xl mb-3 py-10 px-10">
                   <h1 className="text-center text-xl mb-5">Innovation</h1>
                   <p className="text-center">
                     Innovation is at the heart of everything we do
                   </p>
                 </div>
-                <div className="h-16 bg-gradient-to-b from-[#ff5900] from-10% to-transparent to-80% rounded-2xl mb-3 p-0.5">
-                  <div className="h-full w-full bg-black rounded-2xl"></div>
+                <div className="h-16 bg-gradient-to-b from-[#ff5900] from-10% to-transparent to-90% rounded-2xl mb-3 p-0.5">
+                  <div className="w-full h-full bg-black rounded-2xl">
+                    <div className="h-full w-full bg-gradient-to-b from-[#ff59000b] from-10% to-transparent to-90% rounded-2xl"></div>
+                  </div>
                 </div>
               </div>
               <div className="col-3 w-full mx-1.5">
                 <div className="h-32 bg-gradient-to-t from-[#ff5900] from-10% to-transparent to-90% rounded-2xl mb-3 p-0.5">
-                  {" "}
-                  <div className="h-full w-full bg-black rounded-2xl"></div>
+                  <div className="w-full h-full bg-black rounded-2xl">
+                    <div className="h-full w-full bg-gradient-to-t from-[#ff59000b] from-10% to-transparent to-90% rounded-2xl"></div>
+                  </div>
                 </div>
-                <div className="card w-full border-2 border-[#ff5900] rounded-2xl py-24 px-10 mb-3 relative group overflow-hidden">
+                <div className="value-card w-full border-2 border-[#ff5900] bg-[#ff59000b] rounded-2xl py-24 px-10 mb-3 relative group overflow-hidden">
                   <h1 className="text-center text-xl mb-5">
                     Customer-Centricity
                   </h1>
@@ -228,8 +242,10 @@ const page = () => {
                     Expand <MoveRight className="ml-1.5 w-5 h-5" />
                   </Link>
                 </div>
-                <div className="h-20 bg-gradient-to-b from-[#ff5900] from-10% to-transparent to-70% rounded-2xl mb-3 p-0.5">
-                  <div className="h-full w-full bg-black rounded-2xl"></div>
+                <div className="h-20 bg-gradient-to-b from-[#ff5900] from-10% to-transparent to-90% rounded-2xl mb-3 p-0.5">
+                  <div className="w-full h-full bg-black rounded-2xl">
+                    <div className="h-full w-full bg-gradient-to-b from-[#ff59000b] from-10% to-transparent to-90% rounded-2xl"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -320,6 +336,48 @@ const page = () => {
                 ))}
               </div>
             </div>
+          </div>
+
+          <div className="case-study py-20 mt-20 grid grid-cols-6 gap-10">
+            <div className="header col-span-2 flex justify-center flex-col">
+              <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold mb-5 heading2-bold">
+                <p>View Our</p>
+                <p className="text-[#ff5900]">Case Study</p>
+              </h1>
+            </div>
+            <div className="col-span-4">
+              <CaseStudyFrame />
+            </div>
+          </div>
+
+          <div className="contact py-20 flex flex-col justify-center items-center">
+            <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold mb-16 heading2-bold text-center">
+              Contact
+            </h1>
+            <div className="w-1/3 mb-16">
+              <form>
+                <Input placeholder="Email" className="w-full text-black mb-5" />
+                <Textarea
+                  placeholder="Message"
+                  className="mt-1.5 shadow-md resize-none text-black mb-5"
+                  rows="5"
+                />
+                <Button
+                  className={
+                    buttonVariants({ variant: "outline" }) +
+                    " relative left-1/2 transform -translate-x-1/2"
+                  }
+                >
+                  Submit
+                </Button>
+              </form>
+            </div>
+            <p className="text-center w-1/2 mb-8">
+              Ready to transform your business? Get in touch with us today to
+              discuss how Befog (A&W Technology) can help you achieve your
+              goals.
+            </p>
+            <Button>Contact Us</Button>
           </div>
         </div>
       </section>
