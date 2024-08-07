@@ -72,11 +72,11 @@ const ServiceHover = () => {
   return (
     <>
       <div className="inner max-w-[100rem] mx-auto px-[5%] lg:py-0 py-10">
-        <div className="header lg:mb-20 mb-12">
+        <div className="header py-20 mb-40">
           <p className="text-center">Solutions for Your Success</p>
           <CustomHeader
             header1={
-              <p className=" font-semibold">
+              <p className=" font-semibold text-4xl">
                 Delivering tailored <span className="text-[#ff5900]">tech</span>{" "}
                 solutions to drive your{" "}
                 <span className="text-[#ff5900]">success</span>
@@ -89,7 +89,7 @@ const ServiceHover = () => {
         <div className="">
           <div className="header lg:mb-16 mb-10">
             <p className=" text-[#ff5900] font-medium mb-6">CAPABILITIES</p>
-            <h1 className=" lg:text-6xl md:text-5xl text-4xl">
+            <h1 className=" lg:text-6xl md:text-5xl text-4xl heading2-semibold">
               Capabilities to improve your{" "}
               <span className="text-[#ff5900]">Business</span>
             </h1>
@@ -151,9 +151,9 @@ const ServiceHover = () => {
                     }`}
                     key={index}
                   >
-                    <div className="absolute">
+                    <div className="absolute h-full">
                       <div className="content">
-                        <h1 className="text-2xl font-medium flex items-center mb-5">
+                        <h1 className="text-2xl font-medium flex items-center mb-3">
                           <span className="w-2.5 h-2.5 block bg-[#ff5900] mr-5" />
                           {link.head}
                         </h1>
@@ -165,7 +165,7 @@ const ServiceHover = () => {
                           Get in Touch <MoveRight className=" w-7 h-7 ml-5" />
                         </Link>
                       </div>
-                      <div className="img-cont w-2/3 h-full ml-auto mr-5">
+                      <div className="img-cont w-2/3 bottom-0 h-full ml-auto mr-5">
                         <Image
                         alt=""
                           width={1000}

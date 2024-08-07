@@ -1,3 +1,4 @@
+import CustomHeader from "@/components/custom/CustomHeader";
 import { Button, buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
 import { lazy } from "react";
@@ -56,11 +57,19 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="py-10 lg:pb-20 pb-10">
+        <div className="lg:pb-20 pb-10">
           <ServiceHover />
         </div>
-        <div className="lg:py-10 pb-20">
+        <div className="lg:py-10 pb-20 mb-28">
           <ServiceFull />
+        </div>
+
+        <div className="lg:py-10 pb-20">
+          <div className="flex flex-col justify-center items-center">
+          <CustomHeader header1="Innovate, Collaborate, Succeed Together." header2="Career" className="before:hidden" />
+          <p className="text-center mt-20 mb-10">Grow your careers at the heart of change</p>
+          <Button className={buttonVariants({ variant: "outline" })}>Contact</Button>
+          </div>
         </div>
       </section>
     </>

@@ -15,7 +15,7 @@ import { MoveRight } from "lucide-react";
 const page = () => {
   const members = [
     {
-      image: "/assets/team/as.jpg",
+      image: "/assets/team/anushree.jpg",
       name: "Anushree Saxena",
       position: "HR Manager",
       alt: "Anushree Saxena",
@@ -78,9 +78,9 @@ const page = () => {
             </div>
           </div>
 
-          <div className="accordion py-12">
+          <div className="accordion py-28">
             <div className="content mb-16">
-              <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold mb-8">
+              <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold mb-8 heading2-bold">
                 Creating positive <span className="text-[#ff5900]">change</span>
               </h1>
               <p className="lg:w-[50%]">
@@ -89,7 +89,7 @@ const page = () => {
                 our clients, and the communities we call home
               </p>
             </div>
-            <div className="accord-cont mb-32">
+            <div className="accord-cont mb-44">
               <Accordion type="single" collapsible>
                 <AccordionItem value="item-1">
                   <AccordionTrigger>Code of Business Athics</AccordionTrigger>
@@ -124,9 +124,9 @@ const page = () => {
               </Accordion>
             </div>
             <div className="header relative mb-40 w-[55%] mx-auto">
-              <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold text-center">
+              <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold text-center heading2-bold">
                 We help many of Professionals be more effective at their
-                Bussiness
+                <span className="text-[#ff5900] ml-5">Bussiness</span>
               </h1>
               <div className="img-cont w-80 absolute -right-20">
                 <Image
@@ -139,8 +139,8 @@ const page = () => {
             </div>
           </div>
 
-          <div className="values py-12">
-            <div className="header mb-16">
+          <div className="values py-24">
+            <div className="header mb-24">
               <h1 className=" lg:text-8xl md:text-7xl sm:text-6xl text-5xl font-black text-center text-[#FF590026]">
                 Core Values
               </h1>
@@ -236,14 +236,14 @@ const page = () => {
           </div>
 
           <div className="team py-12">
-            <div className="header mb-8">
+            <div className="header mb-5">
               <CustomHeader
                 header1="Leadership Team"
                 header2="Team"
                 className="before:hidden"
               />
             </div>
-            <div className="founder grid grid-cols-7 gap-16 mx-auto mb-20">
+            <div className="founder grid grid-cols-7 gap-16 mx-auto mb-40">
               <div className="sanjay-photo col-span-2 rounded-tr-3xl overflow-hidden">
                 <Image
                   width={1000}
@@ -258,27 +258,24 @@ const page = () => {
                   <h1 className="text-[#ff5900] font-semibold mb-5">
                     Founder & Director
                   </h1>
-                  <h1 className="text-4xl font-medium mb-3">
+                  <h1 className="text-4xl font-medium mb-3 heading2-bold">
                     Mr. Sanjay Mehrotra
                   </h1>
                   <div className="mb-10">
                     <p className="mb-3">
-                      It is with great enthusiasm and pride that I welcome you
-                      to Befog. As the founder of this innovative IT startup, I
-                      am excited to share our vision and the journey that has
-                      brought us here. At Befog, we are dedicated to pushing the
-                      boundaries of technology to deliver solutions that not
-                      only meet the needs of today but anticipate the challenges
-                      of tomorrow.
+                      Welcome to Befog! As the founder of this innovative IT
+                      startup, I'm thrilled to share our vision and journey. At
+                      Befog, we strive to push the boundaries of technology,
+                      delivering solutions that meet today's needs and
+                      anticipate tomorrow's challenges.
                     </p>
                     <p>
-                      Our story began with a simple yet profound belief:
-                      technology holds the key to transforming businesses and
-                      enriching lives. With this conviction at our core, we have
-                      assembled a team of exceptional individuals who share a
-                      common passion for innovation and excellence. Together, we
-                      are committed to creating a future where technology
-                      empowers organizations to achieve their fullest potential.
+                      Our story began with a belief that technology can
+                      transform businesses and enrich lives. We've built a team
+                      of passionate and talented individuals who are dedicated
+                      to innovation and excellence. Together, we're committed to
+                      empowering organizations to reach their fullest potential
+                      through the power of technology.
                     </p>
                   </div>
                   <Button className={buttonVariants({ variant: "outline" })}>
@@ -288,8 +285,8 @@ const page = () => {
               </div>
             </div>
             <div className="team-members">
-              <div className="team-intro mb-8">
-                <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold mb-3">
+              <div className="team-intro mb-16">
+                <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold mb-5 heading2-bold">
                   Meet <span className="text-[#ff5900]">Our Team</span>
                 </h1>
                 <p>
@@ -303,7 +300,12 @@ const page = () => {
                   <div className="col-span-1" key={index}>
                     <div className="w-fit mx-auto">
                       <div className="img-cont w-64 h-[19rem] rounded-tr-3xl overflow-hidden mb-5 relative">
-                        <Image width={1000} height={1000} src={member.image} alt={member.alt} />
+                        <Image
+                          width={1000}
+                          height={1000}
+                          src={member.image}
+                          alt={member.alt}
+                        />
                       </div>
                       <div className="member-info">
                         <h1 className="font-semibold text-xl text-center mb-1.5">

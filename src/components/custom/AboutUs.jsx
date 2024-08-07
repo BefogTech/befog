@@ -11,7 +11,7 @@ const AboutUs = () => {
           <CustomHeader
             header1="About Us"
             header2="Company"
-            className="before:-right-3 lg:mb-20 mb-8"
+            className="before:-right-3 lg:mb-24 mb-8"
           />
           <div className="grid lg:grid-cols-2 xl:gap-20 md:gap-10 gap-0 group">
             <div className="img-cont col-span-1 lg:order-1 order-2 lg:w-full md:w-[80%] mx-auto relative lg:after:w-[25%] after:w-[20%] after:h-[120%] after:absolute md:after:block after:hidden lg:after:right-[80%] after:right-[90%] after:bg-[#ff5900] after:top-1/2 after:transform after:-translate-y-1/2 after:z-0 z-[1]">

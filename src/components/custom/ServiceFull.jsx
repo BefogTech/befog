@@ -24,7 +24,7 @@ const ServiceFull = () => {
           duration: 1,
           scrollTrigger: {
             trigger: section,
-            start: "top 70%",
+            start: "top 85%",
             end: "top center",
             scrub: true,
             once: true,
@@ -32,7 +32,7 @@ const ServiceFull = () => {
               gsap.fromTo(
                 section,
                 { y: 100, opacity: 0 },
-                { y: 0, opacity: 1, duration: 1 }
+                { y: 0, opacity: 1, duration: 0.3 }
               );
             },
             onLeaveBack: () => {

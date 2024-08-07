@@ -123,7 +123,7 @@ const Footer = () => {
             <ul>
               {use_case.map((link, index) => (
                 <li key={index} className="md:my-1.5 my-0 md:text-base text-sm">
-                  <Link href={link.link} className="py-0.5 block w-full">
+                  <Link href={link.link} className="py-0.5 block w-full hover:text-[#ffae83] duration-200 ease-in-out transition-all">
                     {link.title}
                   </Link>
                 </li>
@@ -135,7 +135,7 @@ const Footer = () => {
             <ul>
               {services.map((link, index) => (
                 <li key={index} className="md:my-1.5 my-0 md:text-base text-sm">
-                  <Link href={link.link} className="py-0.5 block w-full">
+                  <Link href={link.link} className="py-0.5 block w-full hover:text-[#ffae83] duration-200 ease-in-out transition-all">
                     {link.title}
                   </Link>
                 </li>
@@ -147,13 +147,13 @@ const Footer = () => {
             <ul>
               {explore.map((link, index) => (
                 <li key={index} className="md:my-1.5 my-0 md:text-base text-sm">
-                  <Link href={link.link} className="py-0.5 block w-full">
+                  <Link href={link.link} className="py-0.5 block w-full hover:text-[#ffae83] duration-200 ease-in-out transition-all">
                     {link.title}
                   </Link>
                 </li>
               ))}
               <li className="md:my-1.5 my-0 md:text-base text-sm">
-                <a href="" className="py-0.5 block w-full">Go to Top</a>
+                <a href="" className="py-0.5 block w-full hover:text-[#ffae83] duration-200 ease-in-out transition-all">Go to Top</a>
               </li>
             </ul>
           </div>

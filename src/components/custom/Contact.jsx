@@ -20,7 +20,7 @@ const Contact = () => {
           />
           <div className="grid md:grid-cols-2">
             <div className="col-span-1 md:px-10 px-0 lg:py-20 lg:pt-0 md:pt-10 md:mb-0 mb-10 z-[3]">
-              <div className="form max-w-2xl p-8 bg-white rounded text-black flex items-center flex-col relative lg:left-16">
+              <div className="form max-w-lg p-8 bg-white rounded text-black flex items-center flex-col relative lg:left-16">
                 <h1 className="text-2xl text-center mb-5 font-semibold relative w-fit before:w-20 before:h-1 before:rounded-full before:absolute before:bottom-0 before:-right-3 before:bg-[#ff5900]">
                   Contact
                 </h1>
@@ -45,11 +45,11 @@ const Contact = () => {
                   </div>
                 </form>
                 <div className="lg:block hidden w-10 h-20 bg-[#ff5900] absolute -top-20 right-32" />
-                <div className="lg:block hidden h-10 w-20 bg-[#ff5900] absolute lg:bottom-20 bottom-32 -right-20" />
+                <div className="lg:block hidden h-10 w-20 bg-[#ff5900] absolute lg:bottom-12 bottom-32 -right-20" />
               </div>
             </div>
             <div className="col-span-1 relative z-[1] flex md:flex-col md:items-end items-center md:justify-end justify-center">
-              <div className="absolute lg:-top-20 top-0 lg:-left-16 -left-32 w-full md:block hidden">
+              <div className="absolute lg:-top-20 top-0 lg:-left-36 -left-32 w-full md:block hidden">
                 <div className="w-full lg:min-w-[450px] md:min-w-[500px] h-full overflow-hidden">
                   <Image
                     width={1000}
@@ -60,11 +60,11 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              <div className="w-fit block relative md:bottom-20">
+              <div className="w-fit block relative md:bottom-20 right-28">
                 <ul className="flex">
                   <li className="w-fit lg:mx-6 mx-3">
                     <a
-                      href="tel:+9235320323"
+                      href="tel:+7985322738"
                       target="_blank"
                       className="bg-black md:w-24 w-16 md:h-24 h-16 grid place-items-center rounded-full border border-[#ff5900]"
                     >
@@ -76,7 +76,7 @@ const Contact = () => {
                   </li>
                   <li className="w-fit lg:mx-6 mx-3">
                     <a
-                      href="mailto:awtech06@gmail.com"
+                      href="mailto:contact.us@befog.in"
                       target="_blank"
                       className="bg-black md:w-24 w-16 md:h-24 h-16 grid place-items-center rounded-full border border-[#ff5900]"
                     >

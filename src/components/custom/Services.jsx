@@ -63,11 +63,11 @@ const Services = () => {
   ];
   return (
     <>
-      <section className="services lg:py-28 py-20 bg-[#000]">
-        <div className="inner-services max-w-[100rem] mx-auto px-[5%] grid lg:grid-cols-2 lg:mb-40 mb-28">
+      <section className="services lg:py-32 py-20 bg-[#000]">
+        <div className="inner-services max-w-[100rem] mx-auto px-[5%] grid lg:grid-cols-2 lg:mb-60 mb-28">
           <div className="service-content col-span-1 flex justify-center items-center lg:mb-0 mb-16">
             <div className="content lg:pr-[10%] flex flex-col lg:items-start items-center">
-              <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-3xl lg:mb-12 mb-5">
+              <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-3xl lg:mb-12 mb-5 heading2-bold">
                 <span className="text-[#FF5900] font-semibold">Services</span>{" "}
                 We{" "}
                 <span className="after:h-1 after:w-[80%] w-full after:absolute relative after:block after:bottom-0 after:-right-3 after:bg-[#FF5900] after:rounded-full">
@@ -103,8 +103,8 @@ const Services = () => {
               header2="Service"
               className="before:-left-3"
             />
-            <p className="text-center md:text-base text-sm">
-              Streamlined web solutions for seamless online experiences.
+            <p className="text-center md:text-base text-sm kalam-regular italic">
+              "Streamlined Web solutions for seamless online experiences."
             </p>
           </div>
           <div className="cards w-fit mx-auto grid lg:grid-cols-3 sm:grid-cols-2 xl:gap-8 md:gap-5 gap-2">
