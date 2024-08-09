@@ -1,4 +1,5 @@
 "use client";
+import axios from "axios";
 import { ChevronDown, GlobeIcon, MenuIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,6 +7,25 @@ import React, { useEffect, useState } from "react";
 import { FaXmark } from "react-icons/fa6";
 
 const Navbar = () => {
+  const [countries, setCountries] = useState();
+  useEffect(() => {
+    if (!countries) {
+      const headers = {
+        "X-CSCAPI-KEY":
+          "RENsbnBxc3FHNGIxSG85ZlpnY3NLNFpFdTUzVW91WVA1QjdFUzlNeA==",
+      };
+
+      axios
+        .get("https://api.countrystatecity.in/v1/countries", { headers })
+        .then((response) => {
+          setCountries(response.data);
+        })
+        .catch((error) => {
+          console.log("error", error);
+        });
+    }
+  }, [countries]);
+
   const links = [
     {
       link: "/services",

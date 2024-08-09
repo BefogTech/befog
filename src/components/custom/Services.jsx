@@ -8,8 +8,8 @@ const Services = () => {
   const services = [
     {
       title: "App Developement",
-      description:
-        "Elevate your business with engaging mobile apps that captivate users, drive sales, and foster growth.",
+      description: "Innovative mobile apps for iOS and Android platforms.",
+      p: "Our team develops feature-rich, intuitive mobile applications to give your business a competitive edge in the digital market.",
       image: "/assets/card_image/app.jpg",
       bg: `bg-gradient-to-b from-[#1B0000] to-[#1B0000]`,
       blend: "#ff5900,#ff5900",
@@ -17,8 +17,8 @@ const Services = () => {
     },
     {
       title: "Website Developement",
-      description:
-        "Create visually appealing and functional websites that attract visitors, convert leads, and build a strong online presence.",
+      description: " Custom websites tailored to your business needs.",
+      p: "We create responsive, user-friendly websites designed to enhance your online presence and engage your audience.",
       image: "/assets/card_image/web.jpg",
       bg: "bg-gradient-to-b from-[#130000] to-[#130000]",
       blend: "#ff5900,#ff5900",
@@ -26,8 +26,8 @@ const Services = () => {
     },
     {
       title: "Artificial Intelligence",
-      description:
-        "Leverage data-driven insights. Optimize operations. Make informed decisions. Drive business growth.",
+      description: "Advanced AI solutions for smarter business operations.",
+      p: "We offer cutting-edge AI technologies that automate processes, improve decision-making, and provide personalized user experiences.",
       image: "/assets/card_image/ai.jpg",
       bg: "bg-gradient-to-b from-[#100202] to-[#100202]",
       blend: "#ff5900,#ff5900",
@@ -35,8 +35,8 @@ const Services = () => {
     },
     {
       title: "IOT Service",
-      description:
-        "Connect devices and data. Create innovative solutions. Improve efficiency. Gain a competitive edge.",
+      description: "Seamless IoT integration for smarter connectivity.",
+      p: "Our IoT services connect devices and systems, enabling real-time data sharing and automation to optimize your business processes.",
       image: "/assets/card_image/iot.jpg",
       bg: "bg-gradient-to-b from-[#1F0003] to-[#2F0005]",
       blend: "#ff5900,#ff5900",
@@ -44,8 +44,8 @@ const Services = () => {
     },
     {
       title: "AR/VR Service",
-      description:
-        "Immerse audiences in interactive experiences that drive sales, build brand awareness, and create lasting impressions.",
+      description: "Intelligent chatbots for 24/7 customer support.",
+      p: "Our AR/VR solutions create interactive, immersive environments, revolutionizing how customers experience your products and services.",
       image: "/assets/card_image/ar-vr.jpg",
       bg: "bg-gradient-to-b from-[#1C0003] to-[#37000F]",
       blend: "#ff5900,#ff5900",
@@ -53,8 +53,8 @@ const Services = () => {
     },
     {
       title: "Chatbot Service",
-      description:
-        "Provide efficient and personalized customer support, increase satisfaction, and build stronger customer relationships.",
+      description: " Immersive AR/VR experiences for enhanced engagement.",
+      p: "We develop AI-powered chatbots that provide instant, accurate responses, enhancing customer satisfaction and reducing operational costs.",
       image: "/assets/card_image/chatbot.jpg",
       bg: "bg-gradient-to-b from-[#37000E] from-[32.39%] via-[#470013] via-[87.14%] to-[#36000E] to-[100%]",
       blend: "#ff5900,#ff5900",
@@ -68,8 +68,7 @@ const Services = () => {
           <div className="service-content col-span-1 flex justify-center items-center lg:mb-0 mb-16">
             <div className="content lg:pr-[10%] flex flex-col lg:items-start items-center">
               <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-3xl lg:mb-12 mb-5 heading2-semibold">
-                <span className="text-[#FF5900] font-medium">Services</span>{" "}
-                We{" "}
+                <span className="text-[#FF5900] font-medium">Services</span> We{" "}
                 <span className="after:h-1 after:w-[80%] w-full after:absolute relative after:block after:bottom-0 after:-right-3 after:bg-[#FF5900] after:rounded-full">
                   Provide
                 </span>
@@ -81,7 +80,9 @@ const Services = () => {
                 team is dedicated towards transforming ideas into impactful
                 reality. Discover how we enhance your digital journey...
               </p>
-              <Button className=" w-fit lg:block hidden">Explore Now</Button>
+              <Button className=" w-fit lg:block hidden">
+                Connect with Us
+              </Button>
             </div>
           </div>
           <div className="col-span-1 lg:px-0 md:px-[15%] flex items-center justify-center flex-col">
