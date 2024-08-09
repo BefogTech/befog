@@ -11,7 +11,7 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
 import React, { useState } from "react";
 
-const page = () => {
+const ContactUs = () => {
   const [contactFormVisible, setContactFormVisible] = useState(false);
 
   return (
@@ -57,6 +57,7 @@ const page = () => {
                       src="/assets/contact-us/phone.png"
                       width={1000}
                       height={1000}
+                      alt="phone"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -71,6 +72,7 @@ const page = () => {
                       src="/assets/contact-us/mail.png"
                       width={1000}
                       height={1000}
+                      alt="mail"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -85,6 +87,7 @@ const page = () => {
                       src="/assets/contact-us/location.png"
                       width={1000}
                       height={1000}
+                      alt="location"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -133,4 +136,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ContactUs;
